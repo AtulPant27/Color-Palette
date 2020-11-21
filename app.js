@@ -248,7 +248,7 @@ function savePalette(e) {
   });
   //Generate Object
   let paletteNr;
-  const paletteObjects = Json.parse(localStorage.getItem("palettes"));
+  const paletteObjects = JSON.parse(localStorage.getItem("palettes"));
   if (paletteObjects) {
     paletteNr = paletteObjects.length;
   } else {
